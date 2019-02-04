@@ -1,0 +1,22 @@
+
+## USER-NEEDS
+
+   BANDS IN TOWN
+   The user can enter the name of an artist or band and the command line app will return
+    -The name of the venue where the artist is playing
+    -The venue location 
+    -The date of the event
+
+
+    SPOTIFY
+    The user can enter the name of a song and the command line app will return
+    -name of artist
+    -name of song
+    -preveiw link of song from SPOTIFY
+    -album song is on
+    -is a song is not provided the program will default to the sign by ace of base
+
+
+## Where to Start
+
+    -
