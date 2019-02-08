@@ -15,17 +15,17 @@ Followed by:
 #### Example for concert-this command
 node liri.js concert-this <'band name'>
 
-![Concert-this](images/concert-this.png)
+![Concert-this](images/concert-this.PNG)
 
 #### Example for movie-this command
 node liri.js movie-this <'movie name'>
 
-![Movie-this](images/movie-this.png)
+![Movie-this](images/movie-this.PNG)
 
 #### Example for spotify-this-song command
 node liri.js spotify-this-song <'song name'>
 
-![Song-this](images/spotify-this.png)
+![Song-this](images/spotify-this.PNG)
 
 ##### Packages
 *NPM Packages Used
