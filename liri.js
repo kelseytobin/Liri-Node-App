@@ -13,29 +13,29 @@ var thisCommand = args[2];
 
 var artist = "";
 var movieName = "";
-var song = "";
+var title = "";
 
 
 //make the application understand multiple word searches
-// function multiple() {
+function multiple() {
     for (var i = 3; i < args.length; i++) {
         if (i > 3 && i < args.length) {
             artist = artist + "+" + args[i];
             movieName = movieName + "+" + args[i];
-            song = song + "+" + args[i];
+            title = title + "+" + args[i];
         } else {
             artist += args[i];
             movieName += args[i];
-            song += args[i];
+            title += args[i];
         }
     };
-// };
+};
 
 
 
 
 //axios get function for bandsintown
-// function band() {
+function band() {
     if (thisCommand === "concert-this") {
         axios
             .get("https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp")
@@ -54,11 +54,11 @@ var song = "";
             })
     }
 
-// };
+};
 
 
 //axios get function for OMDB
-// function movie() {
+function movie() {
     if (thisCommand === "movie-this") {
         axios
             .get("http://www.omdbapi.com/?t=" + movieName + "&y=&plot=short&apikey=trilogy")
@@ -78,24 +78,26 @@ var song = "";
             })
     }
 
-// }
+}
+
+
 
 
 //spotify request
-// function song() {
+function searchSong() {
+    var spotify = new Spotify(keys.spotify);
     if (thisCommand === "spotify-this-song") {
         spotify.search({
                 type: "track",
-                query: song
+                query: title
             })
             .then(function (response) {
-                console.log("--------------------------------\n" + "\nArtist: " + response.tracks.items[0].artists[0].name + "\nSong Name: " + response.tracks.items[0].name + "\nAlbum Name: " + 
-                    response.tracks.items[0].album.name + "\nListen Here: " + response.tracks.items[0].externam_urls.spotify);
+                console.log("--------------------------------\n" + "\nArtist: " + response.tracks.items[0].artists[0].name + "\nSong Name: " + response.tracks.items[0].name + "\nAlbum Name: " +
+                    response.tracks.items[0].album.name + "\nListen Here: " + response.tracks.items[0].external_urls.spotify);
 
                 console.log("--------------------------------\n");
 
             })
-
             .catch(function (error) {
                 if (error.response) {
                     console.log(error.response);
@@ -103,9 +105,9 @@ var song = "";
             })
     }
 
-// }
+}
 
-// multiple();
-// band();
-// movie();
-// song();
+multiple();
+band();
+movie();
+searchSong();
