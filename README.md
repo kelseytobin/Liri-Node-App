@@ -1,44 +1,44 @@
 # Liri-Node-App
-CLI Language Interpretation and Recogniction Interface
+**CLI Language Interpretation and Recogniction Interface**
 
 ## Introduction
 LIRI is a Language Interpretation and Recognition Interface. LIRI uses command line and node to take in parameters and give the user back requested data.
 
 ### Commands
-node liri.js
+**node liri.js**
 
-Followed by:
-        *concert-this
-        *movie-this
-        *-spotify-this-song
+**Followed by:**
+        _1.concert-this_
+        _1.movie-this_
+        _1.spotify-this-song_
 
 #### Example for concert-this command
-node liri.js concert-this <'band name'>
+_node liri.js concert-this <'band name'>_
 
 ![Concert-this](images/concert-this.PNG)
 
 #### Example for movie-this command
-node liri.js movie-this <'movie name'>
+_node liri.js movie-this <'movie name'>_
 
 ![Movie-this](images/movie-this.PNG)
 
 #### Example for spotify-this-song command
-node liri.js spotify-this-song <'song name'>
+_node liri.js spotify-this-song <'song name'>_
 
 ![Song-this](images/spotify-this.PNG)
 
 ##### Packages
-*NPM Packages Used
+**1.NPM Packages Used**
     1. Spotify
-    2. Moment
-    3. Axios
-    4. Dotenv
+    1. Moment
+    1. Axios
+    1. Dotenv
 
 *To install these packages run the following commands in your terminal
-    -npm install spotify
-    -npm install moment
-    -npm install axios
-    -npm install dotenv
+    1.npm install spotify
+    1.npm install moment
+    1.npm install axios
+    1.npm install dotenv
 
 
 
