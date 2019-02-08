@@ -8,9 +8,9 @@ LIRI is a Language Interpretation and Recognition Interface. LIRI uses command l
 **node liri.js**
 
 **Followed by:**
-        _1.concert-this_
-        _1.movie-this_
-        _1.spotify-this-song_
+       + _concert-this_
+       + _movie-this_
+       + _spotify-this-song_
 
 #### Example for concert-this command
 _node liri.js concert-this <'band name'>_
@@ -29,16 +29,16 @@ _node liri.js spotify-this-song <'song name'>_
 
 ##### Packages
 **1.NPM Packages Used**
-    1. Spotify
-    1. Moment
-    1. Axios
-    1. Dotenv
+    + Spotify
+    + Moment
+    + Axios
+    + Dotenv
 
 *To install these packages run the following commands in your terminal
-    1.npm install spotify
-    1.npm install moment
-    1.npm install axios
-    1.npm install dotenv
+    + npm install spotify
+    + npm install moment
+    + npm install axios
+    + npm install dotenv
 
 
 
