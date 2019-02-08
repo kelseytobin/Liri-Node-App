@@ -32,6 +32,7 @@ _node liri.js spotify-this-song <'song name'>_
 
 ##### Packages
 **1.NPM Packages Used**
+    
     Spotify
 
     Moment
@@ -40,7 +41,8 @@ _node liri.js spotify-this-song <'song name'>_
 
     Dotenv
 
-*To install these packages run the following commands in your terminal
+**To install these packages run the following commands in your terminal**
+    
     npm install spotify
 
     npm install moment
@@ -48,7 +50,7 @@ _node liri.js spotify-this-song <'song name'>_
     npm install axios
 
     npm install dotenv
-    
+
 
 
 
