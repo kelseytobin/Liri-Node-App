@@ -57,7 +57,7 @@ function band() {
 };
 
 
-//axios get function for OMDB
+//axios get function for OMDB , imdb rating not working
 function movie() {
     if (thisCommand === "movie-this") {
         axios
